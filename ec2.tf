@@ -5,7 +5,7 @@ resource "aws_instance" "server1" {
     
   ami = "${var.ami}"
   instance_type = "t2.micro"
-  key_name = "mandic"
+  key_name = ""
   associate_public_ip_address = "true"
   subnet_id = "${aws_subnet.main-public-1.id}"
 
@@ -19,7 +19,7 @@ resource "aws_instance" "server2" {
     
   ami = "${var.ami}"
   instance_type = "t2.micro"
-  key_name = "mandic"
+  key_name = ""
   associate_public_ip_address = "true"
   subnet_id = "${aws_subnet.main-public-2.id}"
 
@@ -33,7 +33,7 @@ resource "aws_instance" "server3" {
     
   ami = "${var.ami}"
   instance_type = "t2.micro"
-  key_name = "mandic"
+  key_name = ""
   associate_public_ip_address = "true"
   subnet_id = "${aws_subnet.main-private-1.id}"
 
@@ -47,7 +47,7 @@ resource "aws_instance" "server4" {
     
   ami = "${var.ami}"
   instance_type = "t2.micro"
-  key_name = "mandic"
+  key_name = ""
   associate_public_ip_address = "true"
   subnet_id = "${aws_subnet.main-private-2.id}"
 
